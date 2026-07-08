@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Follow Me — сыродавленные масла холодного отжима</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="oil-drops" id="oilDrops" aria-hidden="true"></div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo">
+      <img src="assets/img/logo.jpg" alt="Follow Me" class="logo__img" width="872" height="577">
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#hero" class="nav__link">Главная</a>
+      <a href="#catalog" class="nav__link">Каталог</a>
+      <a href="#about" class="nav__link">О нас</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Открыть корзину">
+        🛒
+        <span class="cart-btn__badge" id="cartBadge">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="hero">
+    <div class="hero__blob hero__blob--1"></div>
+    <div class="hero__blob hero__blob--2"></div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">Привет! Рады видеть вас в мире настоящего вкуса 🌿</h1>
+        <p class="hero__subtitle">
+          Сыродавленные масла холодного отжима — без нагрева, рафинирования и химии.
+          Только семена, пресс и максимум пользы.
+        </p>
+        <a href="#catalog" class="btn btn--primary btn--lg">Смотреть каталог</a>
+      </div>
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline>
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages" id="about">
+    <div class="container">
+      <h2 class="section-title">Почему именно мы</h2>
+      <div class="advantages__grid">
+        <div class="advantage-card">
+          <div class="advantage-card__icon">❄️</div>
+          <h3>Холодный отжим</h3>
+          <p>Температура при отжиме не превышает 40°C — все витамины и полезные жиры остаются живыми.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">🚫</div>
+          <h3>Без рафинирования</h3>
+          <p>Никакой химической очистки — только натуральное фильтрование от осадка.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">🌾</div>
+          <h3>Свои поля</h3>
+          <p>Сырьё закупаем у проверенных фермеров, отжимаем небольшими партиями для каждого заказа.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">💛</div>
+          <h3>Польза в каждой капле</h3>
+          <p>Омега-кислоты, витамин Е и антиоксиданты — то, ради чего стоит выбрать сыродавленное масло.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="poster">
+    <div class="container poster__inner">
+      <div class="poster__frame">
+        <span class="poster__pin"></span>
+        <img src="assets/img/poster.jpg" alt="Плакат Follow Me — кунжутное масло сыродавленное" class="poster__img" width="700" height="933" loading="lazy">
+      </div>
+      <div class="poster__text">
+        <h2 class="section-title poster__title">Настоящий вкус природы в каждой капле</h2>
+        <p class="poster__desc">
+          Скидка 10 процентов при 1 заказе.
+        </p>
+        <a href="#catalog" class="btn btn--primary">Смотреть каталог</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <div class="catalog__header">
+        <h2 class="section-title catalog__title">Каталог масел</h2>
+        <button class="btn btn--outline" id="toggleCatalogBtn">Показать всё</button>
+      </div>
+
+      <div class="catalog__carousel-wrap" id="catalogCarouselWrap">
+        <button class="carousel-arrow carousel-arrow--prev" id="carouselPrev" aria-label="Прокрутить назад">‹</button>
+        <div class="catalog__grid" id="catalogGrid"></div>
+        <button class="carousel-arrow carousel-arrow--next" id="carouselNext" aria-label="Прокрутить вперёд">›</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" id="contacts">
+    <div class="container cta-banner__inner">
+      <div>
+        <h2>Остались вопросы?</h2>
+        <p>Пишите или звоните — подскажем, какое масло подойдёт именно вам.</p>
+      </div>
+      <div class="cta-banner__contacts">
+        <a href="tel:+79116133920">📞 +7 (911) 613-39-20</a>
+        <a href="mailto:nikovar2004@gmail.com">✉️ nikovar2004@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#hero" class="logo logo--footer">
+      <img src="assets/img/logo.jpg" alt="Follow Me" class="logo__img logo__img--footer" width="872" height="577">
+    </a>
+    <p class="footer__text">Сыродавленные масла холодного отжима. Сделано с заботой о вашем здоровье.</p>
+    <div class="footer__social">
+      <a href="#" aria-label="ВКонтакте">VK</a>
+      <a href="#" aria-label="Telegram">TG</a>
+      <a href="#" aria-label="Instagram">IG</a>
+    </div>
+    <p class="footer__copy">© 2026 Follow Me. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- Оверлей для корзины и модалки -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Корзина -->
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-panel__header">
+    <h2>Ваша корзина</h2>
+    <button class="close-btn" id="cartCloseBtn" aria-label="Закрыть корзину">✕</button>
+  </div>
+  <div class="cart-panel__items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">Корзина пока пуста 🌾</p>
+  </div>
+  <div class="cart-panel__footer">
+    <div class="cart-panel__total">
+      <span>Итого:</span>
+      <span id="cartTotal">0 ₽</span>
+    </div>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Оформить заказ</button>
+  </div>
+</aside>
+
+<!-- Модалка оформления заказа -->
+<div class="modal" id="checkoutModal">
+  <div class="modal__box">
+    <button class="close-btn" id="modalCloseBtn" aria-label="Закрыть форму">✕</button>
+    <h2>Оформление заказа</h2>
+    <form id="checkoutForm" novalidate>
+      <label class="field">
+        <span>Имя *</span>
+        <input type="text" name="name" required placeholder="Как к вам обращаться?">
+      </label>
+      <label class="field">
+        <span>Телефон *</span>
+        <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+      </label>
+      <label class="field">
+        <span>Адрес доставки *</span>
+        <input type="text" name="address" required placeholder="Город, улица, дом">
+      </label>
+      <label class="field">
+        <span>Комментарий</span>
+        <textarea name="comment" rows="3" placeholder="Пожелания к заказу"></textarea>
+      </label>
+      <div class="modal__summary" id="modalSummary"></div>
+      <p class="modal__error" id="modalError"></p>
+      <button type="submit" class="btn btn--primary btn--block" id="submitOrderBtn">Подтвердить заказ</button>
+    </form>
+    <div class="modal__success" id="modalSuccess">
+      <div class="modal__success-icon">✅</div>
+      <h3>Спасибо за заказ!</h3>
+      <p>Мы скоро свяжемся с вами для подтверждения.</p>
+      <button class="btn btn--primary" id="successCloseBtn">Отлично</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
