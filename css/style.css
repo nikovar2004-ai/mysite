@@ -61,7 +61,7 @@
   --shadow: 0 10px 30px rgba(138, 90, 66, 0.12);
   --radius: 18px;
   --font-body: 'Angst', system-ui, -apple-system, sans-serif;
-  --font-heading: 'Angst Serif', Georgia, serif;
+  --font-heading: 'Playfair Display', 'Angst Serif', Georgia, serif;
 }
 
 * {
@@ -74,7 +74,7 @@
 .oil-drops {
   position: fixed;
   inset: 0;
-  z-index: 40;
+  z-index: 1;
   overflow: hidden;
   pointer-events: none;
 }
@@ -90,14 +90,14 @@
 .drop__pixel {
   width: 3px;
   height: 3px;
-  background: var(--orange-900);
+  background: var(--orange-700);
   box-shadow:
-    -3px 3px var(--orange-900), 0px 3px var(--orange-600), 3px 3px var(--orange-900),
-    -6px 6px var(--orange-900), -3px 6px var(--orange-300), 0px 6px var(--orange-600), 3px 6px var(--orange-600), 6px 6px var(--orange-900),
-    -6px 9px var(--orange-900), -3px 9px var(--orange-600), 0px 9px var(--orange-500), 3px 9px var(--orange-600), 6px 9px var(--orange-900),
-    -6px 12px var(--orange-900), -3px 12px var(--orange-600), 0px 12px var(--orange-600), 3px 12px var(--orange-600), 6px 12px var(--orange-900),
-    -3px 15px var(--orange-900), 0px 15px var(--orange-600), 3px 15px var(--orange-900),
-    0px 18px var(--orange-900);
+    -3px 3px var(--orange-700), 0px 3px var(--orange-700), 3px 3px var(--orange-700),
+    -6px 6px var(--orange-700), -3px 6px var(--orange-700), 0px 6px var(--orange-700), 3px 6px var(--orange-700), 6px 6px var(--orange-700),
+    -6px 9px var(--orange-700), -3px 9px var(--orange-700), 0px 9px var(--orange-700), 3px 9px var(--orange-700), 6px 9px var(--orange-700),
+    -6px 12px var(--orange-700), -3px 12px var(--orange-700), 0px 12px var(--orange-700), 3px 12px var(--orange-700), 6px 12px var(--orange-700),
+    -3px 15px var(--orange-700), 0px 15px var(--orange-700), 3px 15px var(--orange-700),
+    0px 18px var(--orange-700);
 }
 
 @keyframes dropFall {
@@ -150,6 +150,8 @@ ul {
 }
 
 .container {
+  position: relative;
+  z-index: 2;
   width: 100%;
   max-width: 1560px;
   margin: 0 auto;
@@ -159,10 +161,17 @@ ul {
 .section-title {
   text-align: center;
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 3.4vw, 2.8rem);
-  font-weight: 700;
+  font-size: clamp(2.1rem, 3.6vw, 2.9rem);
+  font-weight: 600;
   color: var(--orange-900);
   margin-bottom: 40px;
+}
+
+/* Акцентные слова внутри заголовков — выделены курсивом и тоном теплее */
+.accent-script {
+  display: inline-block;
+  font-style: italic;
+  color: var(--orange-700);
 }
 
 /* Buttons */
@@ -352,9 +361,9 @@ ul {
 
 .hero__title {
   font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
-  font-weight: 700;
-  line-height: 1.15;
+  font-size: clamp(2.4rem, 5.2vw, 3.8rem);
+  font-weight: 600;
+  line-height: 1.2;
   color: var(--orange-900);
   margin-bottom: 22px;
 }
@@ -446,6 +455,7 @@ ul {
   position: relative;
   max-width: 340px;
   margin: 0 auto;
+  transform-origin: 50% -12px;
   transform: rotate(-4deg);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   box-shadow:
@@ -533,7 +543,8 @@ ul {
 }
 
 .advantage-card {
-  background: var(--white);
+  background: linear-gradient(160deg, var(--orange-100), var(--orange-300));
+  border: 1px solid var(--orange-300);
   border-radius: var(--radius);
   padding: 32px 24px;
   text-align: center;
@@ -543,12 +554,20 @@ ul {
 
 .advantage-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 34px rgba(122, 58, 15, 0.18);
+  box-shadow: 0 16px 34px rgba(122, 58, 15, 0.25);
 }
 
 .advantage-card__icon {
-  font-size: 2.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--white);
+  font-size: 2rem;
   margin-bottom: 14px;
+  box-shadow: 0 6px 14px rgba(122, 58, 15, 0.15);
 }
 
 .advantage-card h3 {
@@ -559,7 +578,7 @@ ul {
 
 .advantage-card p {
   font-size: 0.92rem;
-  color: var(--text-light);
+  color: var(--text);
 }
 
 /* Catalog */
@@ -671,6 +690,8 @@ ul {
 .catalog__grid.is-carousel .product-card:nth-child(6) { animation-delay: 0.3s; }
 .catalog__grid.is-carousel .product-card:nth-child(7) { animation-delay: 0.36s; }
 .catalog__grid.is-carousel .product-card:nth-child(8) { animation-delay: 0.42s; }
+.catalog__grid.is-carousel .product-card:nth-child(9) { animation-delay: 0.48s; }
+.catalog__grid.is-carousel .product-card:nth-child(10) { animation-delay: 0.54s; }
 
 @keyframes cardPop {
   0% {
@@ -828,8 +849,8 @@ ul {
 
 .cta-banner h2 {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
   margin-bottom: 8px;
 }
 
