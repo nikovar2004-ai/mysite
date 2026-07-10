@@ -26,7 +26,11 @@
 
     <div class="header__actions">
       <button class="cart-btn" id="cartBtn" aria-label="Открыть корзину">
-        🛒
+        <svg class="cart-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
         <span class="cart-btn__badge" id="cartBadge">0</span>
       </button>
       <button class="burger" id="burger" aria-label="Меню">
@@ -43,7 +47,7 @@
     <div class="hero__blob hero__blob--2"></div>
     <div class="container hero__inner">
       <div class="hero__text">
-        <h1 class="hero__title">Привет! Рады видеть вас в мире <span class="accent-script">настоящего вкуса</span> 🌿</h1>
+        <h1 class="hero__title">Привет!<br>Рады видеть вас в мире <span class="accent-script">настоящего вкуса</span> 🌿</h1>
         <p class="hero__subtitle">
           Сыродавленные масла холодного отжима — без нагрева, рафинирования и химии.
           Только семена, пресс и максимум пользы.
@@ -58,6 +62,24 @@
     </div>
   </section>
 
+  <section class="philosophy">
+    <div class="philosophy__blob philosophy__blob--1"></div>
+    <div class="philosophy__blob philosophy__blob--2"></div>
+    <div class="container philosophy__inner">
+      <h2 class="section-title">Наша <span class="accent-script">философия</span></h2>
+      <p class="philosophy__text">
+        <strong>Follow Me</strong> — это не просто название, а приглашение. <strong>Последовать за нами</strong>
+        в выборе по-настоящему правильного питания, туда, где вкус не приносят в жертву
+        ради удобства и цены.
+      </p>
+      <p class="philosophy__text">
+        Мы стараемся бережно следовать старым русским традициям отжима масла — тем самым,
+        по которым готовили наши прабабушки и прадедушки: неспешно, без химии и лишней
+        обработки, с уважением к сырью и к тем, для кого оно готовится.
+      </p>
+    </div>
+  </section>
+
   <section class="advantages" id="about">
     <div class="container">
       <h2 class="section-title">Почему именно мы</h2>
@@ -65,7 +87,7 @@
         <div class="advantage-card">
           <div class="advantage-card__icon">❄️</div>
           <h3>Холодный отжим</h3>
-          <p>Температура при отжиме не превышает 40°C — все витамины и полезные жиры остаются живыми.</p>
+          <p>Давление масла происходит без нагрева и контакта с металлом, что сохраняет все витамины и полезные жиры.</p>
         </div>
         <div class="advantage-card">
           <div class="advantage-card__icon">🚫</div>
@@ -75,12 +97,12 @@
         <div class="advantage-card">
           <div class="advantage-card__icon">🌾</div>
           <h3>Свои поля</h3>
-          <p>Сырьё закупаем у проверенных фермеров, отжимаем небольшими партиями для каждого заказа.</p>
+          <p>Сырьё закупаем у проверенных фермеров, отжимаем небольшими партиями в день заказа.</p>
         </div>
         <div class="advantage-card">
           <div class="advantage-card__icon">💛</div>
           <h3>Польза в каждой капле</h3>
-          <p>Омега-кислоты, витамин Е и антиоксиданты — то, ради чего стоит выбрать сыродавленное масло.</p>
+          <p>Омега-кислоты, витамины и антиоксиданты — то, ради чего стоит выбрать сыродавленное масло.</p>
         </div>
       </div>
     </div>
@@ -93,7 +115,7 @@
         <img src="assets/img/poster.jpg" alt="Плакат Follow Me — кунжутное масло сыродавленное" class="poster__img" width="700" height="933" loading="lazy">
       </div>
       <div class="poster__text">
-        <h2 class="section-title poster__title">Настоящий вкус <span class="accent-script">природы</span> в каждой капле</h2>
+        <h2 class="section-title poster__title">Настоящий вкус и польза <span class="accent-script">природы</span> в каждой капле</h2>
         <p class="poster__desc">
           Скидка 10 процентов при 1 заказе.
         </p>

@@ -9,6 +9,7 @@ const products = [
     desc: 'Классика с ярким ореховым ароматом, отжато из отборных семечек.',
     image: 'assets/img/product-sunflower.jpg',
     sizes: [
+      { volume: '100 мл', price: 160 },
       { volume: '250 мл', price: 250 },
       { volume: '500 мл', price: 400 }
     ]
@@ -20,7 +21,8 @@ const products = [
     image: 'assets/img/product-flax.jpg',
     sizes: [
       { volume: '100 мл', price: 350 },
-      { volume: '200 мл', price: 600 }
+      { volume: '250 мл', price: 730 },
+      { volume: '500 мл', price: 1350 }
     ]
   },
   {
@@ -30,7 +32,8 @@ const products = [
     image: 'assets/img/product-pumpkin.jpg',
     sizes: [
       { volume: '100 мл', price: 500 },
-      { volume: '200 мл', price: 900 }
+      { volume: '250 мл', price: 1100 },
+      { volume: '500 мл', price: 2100 }
     ]
   },
   {
@@ -39,6 +42,7 @@ const products = [
     desc: 'Ароматное масло для азиатской кухни и заправки овощных блюд.',
     image: 'assets/img/product-sesame.jpg',
     sizes: [
+      { volume: '100 мл', price: 200 },
       { volume: '250 мл', price: 350 },
       { volume: '500 мл', price: 600 }
     ]
@@ -49,8 +53,9 @@ const products = [
     desc: 'Пикантный вкус с лёгкой остротой, отлично подходит для жарки.',
     image: 'assets/img/product-mustard.jpg',
     sizes: [
-      { volume: '0.25 л', price: 260 },
-      { volume: '0.5 л', price: 480 }
+      { volume: '100 мл', price: 130 },
+      { volume: '250 мл', price: 260 },
+      { volume: '500 мл', price: 480 }
     ]
   },
   {
@@ -59,8 +64,9 @@ const products = [
     desc: 'Изысканное масло премиум-класса из свежих грецких орехов.',
     image: 'assets/img/product-walnut.jpg',
     sizes: [
-      { volume: '0.1 л', price: 480 },
-      { volume: '0.2 л', price: 890 }
+      { volume: '100 мл', price: 480 },
+      { volume: '250 мл', price: 1100 },
+      { volume: '500 мл', price: 2120 }
     ]
   },
   {
@@ -69,8 +75,9 @@ const products = [
     desc: 'Нежный ореховый вкус и лёгкая текстура, богато витамином Е — подходит для кулинарии и ухода за кожей.',
     image: 'assets/img/product-almond.jpg',
     sizes: [
-      { volume: '0.1 л', price: 620 },
-      { volume: '0.2 л', price: 1150 }
+      { volume: '100 мл', price: 620 },
+      { volume: '250 мл', price: 1420 },
+      { volume: '500 мл', price: 2740 }
     ]
   },
   {
@@ -79,8 +86,9 @@ const products = [
     desc: 'Масло для поддержки печени с деликатным травяным вкусом.',
     image: 'assets/img/product-milkthistle.jpg',
     sizes: [
-      { volume: '0.25 л', price: 560 },
-      { volume: '0.5 л', price: 1020 }
+      { volume: '100 мл', price: 280 },
+      { volume: '250 мл', price: 560 },
+      { volume: '500 мл', price: 1020 }
     ]
   },
   {
@@ -89,8 +97,9 @@ const products = [
     desc: 'Из семян рыжика посевного — пикантный горчично-ореховый вкус и рекордное содержание Омега-3.',
     image: PLACEHOLDER_IMAGE,
     sizes: [
-      { volume: '0.25 л', price: 400 },
-      { volume: '0.5 л', price: 720 }
+      { volume: '100 мл', price: 210 },
+      { volume: '250 мл', price: 400 },
+      { volume: '500 мл', price: 720 }
     ]
   },
   {
@@ -99,8 +108,9 @@ const products = [
     desc: 'Сбалансированный состав жирных кислот и мягкий ореховый вкус с лёгкой травяной ноткой.',
     image: 'assets/img/product-hemp.jpg',
     sizes: [
-      { volume: '0.25 л', price: 480 },
-      { volume: '0.5 л', price: 850 }
+      { volume: '100 мл', price: 260 },
+      { volume: '250 мл', price: 480 },
+      { volume: '500 мл', price: 850 }
     ]
   }
 ];
